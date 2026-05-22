@@ -22,5 +22,5 @@ jobs:
             --data "idList=${{ secrets.TRELLO_COMMITS_ID }}" \
             --data "name=${COMMIT_MESSAGE}" \
             --data "desc=Author: ${AUTHOR}%0ABranch: ${BRANCH}%0ACommit: ${COMMIT_URL}" \
-            --data "key=${{ secrets.TRELLO_KEY }}" \
+            --data "key=${{ secrets.TRELLO_API_KEY }}" \
             --data "token=${{ secrets.TRELLO_TOKEN }}"
